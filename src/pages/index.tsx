@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="text-6xl text-center">Hello</h1>
+        <h1 className="text-6xl font-mochiy text-center">Hello</h1>
       </main>
     </>
   )

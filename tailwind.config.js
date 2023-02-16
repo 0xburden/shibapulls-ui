@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        mochiy: 'var(--font-mochiy-pop-one)',
+      },
       colors: {
         'shiba-yellow': '#EECC78',
         'shiba-blue': '#2D44B9',
