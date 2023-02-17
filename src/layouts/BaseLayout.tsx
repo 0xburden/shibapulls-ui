@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { TopBar } from '@/modules/common/components'
+import { TopBar, Footer } from '@/modules/common/components'
 import type { ReactNode } from 'react'
 
 interface Props {
@@ -14,10 +14,13 @@ export default function BaseLayout({ children }: Props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-shiba-yellow w-screen h-screen">
-        <TopBar />
-        {children}
+      <TopBar />
+
+      <div className="bg-shiba-yellow min-w-screen min-h-screen">
+        <div className="p-4">{children}</div>
       </div>
+
+      <Footer />
     </>
   )
 }

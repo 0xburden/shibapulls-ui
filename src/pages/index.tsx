@@ -8,7 +8,7 @@ export default function Home() {
 
       <BaseLayout>
         <main>
-          <h1 className="text-6xl mt-8 font-mochiy text-center">Hello</h1>
+          <h1 className="text-6xl font-mochiy text-center">Hello</h1>
         </main>
       </BaseLayout>
     </>
