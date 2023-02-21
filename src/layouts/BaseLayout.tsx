@@ -4,9 +4,15 @@ import type { ReactNode } from 'react'
 
 interface Props {
   children?: ReactNode;
+  preContent?: ReactNode;
+  postContent?: ReactNode;
 }
 
-export default function BaseLayout({ children }: Props) {
+export default function BaseLayout({
+  children,
+  preContent,
+  postContent,
+}: Props) {
   return (
     <>
       <Head>
@@ -16,9 +22,13 @@ export default function BaseLayout({ children }: Props) {
 
       <TopBar />
 
-      <div className="bg-shiba-yellow min-w-screen min-h-screen">
+      {preContent}
+
+      <div className="bg-shiba-yellow min-w-screen">
         <div className="p-4">{children}</div>
       </div>
+
+      {postContent}
 
       <Footer />
     </>
