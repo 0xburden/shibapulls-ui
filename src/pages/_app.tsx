@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import { Montserrat, Mochiy_Pop_One } from '@next/font/google'
+import { WagmiProvider } from '@/modules/wagmi/components'
 import type { AppProps } from 'next/app'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
@@ -19,7 +20,9 @@ export default function App({ Component, pageProps }: AppProps) {
         }
       `}</style>
       <div className={mochiy.variable}>
-        <Component {...pageProps} />
+        <WagmiProvider>
+          <Component {...pageProps} />
+        </WagmiProvider>
       </div>
     </>
   )
