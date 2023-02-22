@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Button } from '@/modules/common/components'
+import { ConnectButton } from '@/modules/common/components'
 
 export default function TopBar() {
   return (
@@ -12,7 +12,7 @@ export default function TopBar() {
         </Link>
 
         <div>
-          <Button>Connect</Button>
+          <ConnectButton />
         </div>
       </nav>
     </div>

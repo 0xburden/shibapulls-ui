@@ -8,7 +8,7 @@ specifiers:
   autoprefixer: ^10.4.13
   eslint: 8.34.0
   eslint-config-next: 13.1.6
-  ethers: ^6.0.5
+  ethers: 5.7.2
   next: 13.1.6
   postcss: ^8.4.21
   react: 18.2.0
@@ -24,12 +24,12 @@ dependencies:
   '@types/react-dom': 18.0.10
   eslint: 8.34.0
   eslint-config-next: 13.1.6_7kw3g6rralp5ps6mg3uyzz6azm
-  ethers: 6.0.5
+  ethers: 5.7.2
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   typescript: 4.9.5
-  wagmi: 0.11.6_grjxjazlp575na5xywkaznpsne
+  wagmi: 0.11.6_uvigyjn4qryq55spv6ax6k3waq
 
 devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.21
@@ -37,10 +37,6 @@ devDependencies:
   tailwindcss: 3.2.6_postcss@8.4.21
 
 packages:
-
-  /@adraffy/ens-normalize/1.8.9:
-    resolution: {integrity: sha512-93OmGCV0vO8+JQ3FHG+gZk/MPHzzMPDRiCiFcCQNTCnHaaxsacO3ScTPGlu2wX2dOtgfalbchPcw1cOYYjHCYQ==}
-    dev: false
 
   /@babel/compat-data/7.21.0:
     resolution: {integrity: sha512-gMuZsmsgxk/ENC3O/fRw5QY8A9/uxQbbCEypnLIiYYc/qVJtEV7ouxC3EllIIwNzMqAQee5tanFabWsUOutS7g==}
@@ -781,10 +777,6 @@ packages:
     resolution: {integrity: sha512-iR8GBkDt0Q3GyaVcIu7mSsVIqnFbkbRzGLWlvhwunacoLwt4J3swfKhfaM6rN6WY+TBGoYT1GtT1mIh2/jGbRQ==}
     dev: false
 
-  /@noble/hashes/1.1.2:
-    resolution: {integrity: sha512-KYRCASVTv6aeUi1tsF8/vpyR7zpfs3FUzy2Jqm+MU+LmUKhQ0y2FpfwqkCcxSg2ua4GALJd8k2R76WxwZGbQpA==}
-    dev: false
-
   /@noble/hashes/1.2.0:
     resolution: {integrity: sha512-FZfhjEDbT5GRswV3C6uvLPHMiVD6lQBmpoX5+eSiPaMTXte/IKqI5dykDxzZB/WBeK/CDuQRBWarPdi3FNY2zQ==}
     dev: false
@@ -1210,7 +1202,7 @@ packages:
       typescript: 4.9.5
     dev: false
 
-  /@wagmi/connectors/0.2.6_45rg7flmzzq6bdoqicsqehkkp4:
+  /@wagmi/connectors/0.2.6_2yvhc22gtrelhmpzgpholheiyu:
     resolution: {integrity: sha512-I7tsKgbwF6o5aUu6gQk4YMo7fe3iLAgmbFT06/FHlSLKIxI16qkKwjTt04k9WhdDRDYaJH+DqUEyam1jP+jvIg==}
     peerDependencies:
       '@wagmi/core': '>=0.9.x'
@@ -1226,12 +1218,12 @@ packages:
       '@ledgerhq/connect-kit-loader': 1.0.2
       '@safe-global/safe-apps-provider': 0.15.2
       '@safe-global/safe-apps-sdk': 7.10.0
-      '@wagmi/core': 0.9.6_rn63leoh3dtiwuizwkfeok2p5q
+      '@wagmi/core': 0.9.6_sio3kkzt57fgvopk7kzuela3mu
       '@walletconnect/ethereum-provider': 1.8.0
       '@walletconnect/universal-provider': 2.3.3_4bewfcp2iebiwuold25d6rgcsy
       '@web3modal/standalone': 2.1.1_react@18.2.0
       abitype: 0.3.0_typescript@4.9.5
-      ethers: 6.0.5
+      ethers: 5.7.2
       eventemitter3: 4.0.7
       typescript: 4.9.5
     transitivePeerDependencies:
@@ -1250,7 +1242,7 @@ packages:
       - zod
     dev: false
 
-  /@wagmi/core/0.9.6_rn63leoh3dtiwuizwkfeok2p5q:
+  /@wagmi/core/0.9.6_sio3kkzt57fgvopk7kzuela3mu:
     resolution: {integrity: sha512-TGAnA9sNjm3s8evBVxN3yRjZqKGBlhFW1Bk2nX1C1UtlrA5uTIPDWGxHw0CAPmSnE4MLL89Um4JA12jubNqLZg==}
     peerDependencies:
       ethers: '>=5.5.1 <6'
@@ -1260,9 +1252,9 @@ packages:
         optional: true
     dependencies:
       '@wagmi/chains': 0.2.8_typescript@4.9.5
-      '@wagmi/connectors': 0.2.6_45rg7flmzzq6bdoqicsqehkkp4
+      '@wagmi/connectors': 0.2.6_2yvhc22gtrelhmpzgpholheiyu
       abitype: 0.3.0_typescript@4.9.5
-      ethers: 6.0.5
+      ethers: 5.7.2
       eventemitter3: 4.0.7
       typescript: 4.9.5
       zustand: 4.3.3_react@18.2.0
@@ -1807,10 +1799,6 @@ packages:
 
   /aes-js/3.1.2:
     resolution: {integrity: sha512-e5pEa2kBnBOgR4Y/p20pskXI74UEz7de8ZGVo58asOtvSVG5YAbJeELPZxOmt+Bnz3rX753YKhfIn4X4l1PPRQ==}
-    dev: false
-
-  /aes-js/4.0.0-beta.3:
-    resolution: {integrity: sha512-/xJX0/VTPcbc5xQE2VUP91y1xN8q/rDfhEzLm+vLc3hYvb5+qHCnpJRuFcrKn63zumK/sCwYYzhG8HP78JYSTA==}
     dev: false
 
   /agentkeepalive/4.2.1:
@@ -3041,21 +3029,6 @@ packages:
       '@ethersproject/wallet': 5.7.0
       '@ethersproject/web': 5.7.1
       '@ethersproject/wordlists': 5.7.0
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-    dev: false
-
-  /ethers/6.0.5:
-    resolution: {integrity: sha512-qy0HV9NZpRXdFW6Q15o9WCIpKsxQUPjiJPR7EGK8NJO58CQh59Acz58Z+9uEAgcL1e/0Q1DGGm7+WVTjQuvT7g==}
-    engines: {node: '>=14.0.0'}
-    dependencies:
-      '@adraffy/ens-normalize': 1.8.9
-      '@noble/hashes': 1.1.2
-      '@noble/secp256k1': 1.7.1
-      aes-js: 4.0.0-beta.3
-      tslib: 2.4.0
-      ws: 8.5.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -5033,10 +5006,6 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: false
 
-  /tslib/2.4.0:
-    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
-    dev: false
-
   /tslib/2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
     dev: false
@@ -5171,7 +5140,7 @@ packages:
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
-  /wagmi/0.11.6_grjxjazlp575na5xywkaznpsne:
+  /wagmi/0.11.6_uvigyjn4qryq55spv6ax6k3waq:
     resolution: {integrity: sha512-0nd9BZ/4shM6XBhUr3MYk+gaVXR8w6II/37FWN9sjgFOANl17m5ogZ8O6S2hkZbIlzPFke1AA/l23hK9pNbW1g==}
     peerDependencies:
       ethers: '>=5.5.1 <6'
@@ -5184,9 +5153,9 @@ packages:
       '@tanstack/query-sync-storage-persister': 4.24.9
       '@tanstack/react-query': 4.24.9_biqbaboplfbrettd7655fr4n2y
       '@tanstack/react-query-persist-client': 4.24.9_edqnkd4k5jgewaytq5kyy7a3ra
-      '@wagmi/core': 0.9.6_rn63leoh3dtiwuizwkfeok2p5q
+      '@wagmi/core': 0.9.6_sio3kkzt57fgvopk7kzuela3mu
       abitype: 0.3.0_typescript@4.9.5
-      ethers: 6.0.5
+      ethers: 5.7.2
       react: 18.2.0
       typescript: 4.9.5
       use-sync-external-store: 1.2.0_react@18.2.0
@@ -5355,19 +5324,6 @@ packages:
     dependencies:
       bufferutil: 4.0.7
       utf-8-validate: 5.0.10
-    dev: false
-
-  /ws/8.5.0:
-    resolution: {integrity: sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: ^5.0.2
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
     dev: false
 
   /xtend/4.0.2:
