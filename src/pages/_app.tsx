@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
           font-family: ${montserrat.style.fontFamily};
         }
       `}</style>
-      <div className={mochiy.variable}>
+      <div className={mochiy.variable} id="content">
         <WagmiProvider>
           <Component {...pageProps} />
         </WagmiProvider>
