@@ -17,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <style jsx global>{`
         html {
           font-family: ${montserrat.style.fontFamily};
+          background-color: black;
         }
       `}</style>
       <div className={mochiy.variable} id="content">

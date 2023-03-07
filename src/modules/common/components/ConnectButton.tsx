@@ -88,7 +88,11 @@ export default function ConnectButton() {
           )}
 
           <div className="flex items-center justify-center mt-8">
-            <button type="button" className="text-sm" onClick={closeModal}>
+            <button
+              type="button"
+              className="w-full font-bold p-1 border-2 border-gray-500 rounded-[6px] bg-gray-600 hover:border-gray-400 hover:scale-[0.95] transition-all duration-100"
+              onClick={closeModal}
+            >
               close
             </button>
           </div>
