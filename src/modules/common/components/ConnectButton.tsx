@@ -27,6 +27,19 @@ export default function ConnectButton() {
     }
   }, [isOpen])
 
+  const getColorClass = useCallback((index: number) => {
+    switch (index) {
+      case 0:
+        return 'bg-shiba-hot-pink'
+      case 1:
+        return 'bg-shiba-light-green'
+      case 2:
+        return 'bg-shiba-soft-pink'
+      default:
+        return ''
+    }
+  }, [])
+
   if (!isMounted) {
     return null
   }
@@ -73,11 +86,13 @@ export default function ConnectButton() {
             </ul>
           ) : (
             <ul className="mt-4">
-              {connectors.map((connector) => (
+              {connectors.map((connector, index) => (
                 <li key={connector.id} className="mt-2">
                   <button
                     type="button"
-                    className="w-full font-bold p-2 border-2 border-transparent rounded-[6px] hover:border-shiba-yellow hover:scale-[0.95] transition-all duration-100"
+                    className={`w-full font-bold p-2 border-2 border-transparent rounded-[6px] hover:border-shiba-yellow hover:scale-[0.95] transition-all duration-100 ${getColorClass(
+                      index
+                    )}`}
                     onClick={() => connect({ connector })}
                   >
                     {connector.name}
