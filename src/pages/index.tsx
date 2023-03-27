@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Meta, Button } from '@/modules/common/components'
 import { Banner, Team } from '@/modules/home/components'
 import BaseLayout from '@/layouts/BaseLayout'
@@ -25,7 +26,9 @@ export default function Home() {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
 
-              <Button className="mt-8 m-auto text-sm">Mint Now!</Button>
+              <Link href="/mint">
+                <Button className="mt-8 m-auto text-sm">Mint Now!</Button>
+              </Link>
             </div>
           </section>
         </main>
